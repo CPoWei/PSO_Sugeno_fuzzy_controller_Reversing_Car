@@ -4,7 +4,8 @@ Train fuzzy controller with Particle Swarm Optimization for reversing car
 Overview : 
 1. Here is sugeno type fuzzy control model.
 2. The file called “SUGENOwithPSO.m” is the main code.
-3. Following the main code guide, the GA will start to evolve our fuzzy controller to reach our goal!
+3. The file called "controlModel_trained.fis" is a trained model which can be used for "test.m".
+4. Following the main code guide, the GA will start to evolve our fuzzy controller to reach our goal!
 
 Our goal :
 1. The goal is reversing the car(represented as a triangle, the sharp angle is the head of the car) to the location around  
@@ -27,3 +28,5 @@ Insight :
 
 Learning Curve : 
 ![alt tag](https://user-images.githubusercontent.com/34533532/34327541-6a731682-e902-11e7-9a6f-7a65b94a709a.png)
+
+

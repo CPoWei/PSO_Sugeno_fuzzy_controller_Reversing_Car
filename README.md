@@ -1,4 +1,4 @@
-# PSO reversing car with sugeno(TSK) type fuzzy controller
+# PSO in reversing car with sugeno(TSK) type fuzzy controller
 Train fuzzy controller with Particle Swarm Optimization for reversing car
 
 Overview : 

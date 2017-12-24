@@ -1,0 +1,83 @@
+[System]
+Name='controlModel_trained'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=35
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='X'
+Range=[0 100]
+NumMFs=5
+MF1='LE':'gaussmf',[0.001 0.001]
+MF2='LC':'gaussmf',[100 56.0231579597983]
+MF3='CE':'gaussmf',[0.001 100]
+MF4='RC':'gaussmf',[35.9966135705688 100]
+MF5='RI':'gaussmf',[0.001 0.001]
+
+[Input2]
+Name='Phi'
+Range=[-90 270]
+NumMFs=7
+MF1='RU':'gaussmf',[-90 -69.4917264085889]
+MF2='VE':'gaussmf',[270 270]
+MF3='LU':'gaussmf',[-90 270]
+MF4='RB':'gaussmf',[270 -90]
+MF5='RV':'gaussmf',[-90 140.397267675894]
+MF6='LV':'gaussmf',[39.205216565141 270]
+MF7='LB':'gaussmf',[69.3352199258621 270]
+
+[Output1]
+Name='Theta'
+Range=[-30 30]
+NumMFs=7
+MF1='NM':'constant',[-30]
+MF2='ZE':'constant',[-30]
+MF3='PM':'constant',[30]
+MF4='NB':'constant',[-30]
+MF5='NS':'constant',[-30]
+MF6='PS':'constant',[9.43469239736538]
+MF7='PB':'constant',[30]
+
+[Rules]
+1 4, 6 (1) : 1
+1 1, 5 (1) : 1
+1 5, 1 (1) : 1
+1 2, 1 (1) : 1
+1 6, 4 (1) : 1
+1 3, 4 (1) : 1
+1 7, 4 (1) : 1
+2 4, 3 (1) : 1
+2 1, 6 (1) : 1
+2 5, 5 (1) : 1
+2 2, 1 (1) : 1
+2 6, 1 (1) : 1
+2 3, 4 (1) : 1
+2 7, 4 (1) : 1
+3 4, 3 (1) : 1
+3 1, 3 (1) : 1
+3 5, 6 (1) : 1
+3 2, 2 (1) : 1
+3 6, 5 (1) : 1
+3 3, 1 (1) : 1
+3 7, 1 (1) : 1
+4 4, 7 (1) : 1
+4 1, 7 (1) : 1
+4 5, 3 (1) : 1
+4 2, 3 (1) : 1
+4 6, 6 (1) : 1
+4 3, 5 (1) : 1
+4 7, 1 (1) : 1
+5 4, 7 (1) : 1
+5 1, 7 (1) : 1
+5 5, 7 (1) : 1
+5 2, 3 (1) : 1
+5 6, 3 (1) : 1
+5 3, 6 (1) : 1
+5 7, 5 (1) : 1
